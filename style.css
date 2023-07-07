@@ -1,0 +1,111 @@
+
+  /* Header Styles */
+  header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: #fff;
+      color: #fff;
+      padding: 10px;
+  }
+
+  /* Add padding to the top of the section to offset the fixed header */
+  section {
+      padding-top: 150px;
+      /* Adjust the value to match the height of your header */
+  }
+
+  .custom-column {
+      margin-left: 15%;
+      /* Adjust the value as per your requirements */
+  }
+
+  .vertical-line {
+      border-left: 1px solid #33bc84;
+      height: 10%;
+      margin-left: 48%;
+  }
+
+  .product-center {
+    position: relative;
+    right: 85px;
+  }
+
+  .small-text {
+      font-size: 14px;
+      color: #a1a1a1;
+  }
+
+  footer {
+      background-color: #f8f9fa;
+      padding: 20px 0;
+      text-align: center;
+      margin-top: 20%;
+  }
+
+  html {
+      scroll-behavior: smooth;
+  }
+
+  .coming-soon {
+      background-color: #33bc84;
+      color: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+  }
+
+  .coming-soon h3 {
+      font-size: 24px;
+      font-weight: bold;
+  }
+
+  .app-store {
+      text-align: center;
+      margin-top: 20px;
+  }
+
+  .app-store img {
+      height: 50px;
+      width: auto;
+  }
+
+  .app-store-text {
+      font-size: 14px;
+      color: #888;
+  }
+
+  .app-store a.app-store-link {
+      text-decoration: none;
+  }
+
+  .border-line {
+    position: relative;
+}
+
+.border-line::after {
+    content: "";
+    position: absolute;
+    width: 1px; /* Change to appropriate size */
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #000; /* Change to appropriate color */
+}
+
+/* Apply this styling when screen size is less than md */
+@media (max-width: 768px) {
+    .border-line::after {
+        width: 100%;
+        height: 1px;
+    }
+}
+
+  
+  /* hide-on-small */
+  @media (max-width: 576px) {
+    .hide-on-small {
+        display: none !important;
+    }
+  }
